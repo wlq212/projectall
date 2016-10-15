@@ -1,0 +1,18 @@
+/* CSS Document */
+
+.header3 .header3_center .cartop{ float:right;}
+ .header3_center .cartop li{ float:left;}
+  .header3_center .cartop p{ margin-left:35px; }
+.carcentent{ width:1200px; height:400px; margin:0 auto; }
+.carcentent div{ height:70px; height:370px; margin:210px 400px; font-size:12px; color:#666;}
+.carcentent div img{ float:left;}
+.carcentent div span{ display:inline-block; margin-top:15px; margin-bottom:13px;}
+.carcentent div a{ padding:5px 8px; background-color:#e51818; color:#fff;}
+.cardown{ width:1200px; margin:0 auto; overflow:hidden; margin-bottom:10px; }
+.cardown dt{ border-bottom:1px solid #ddd; font-size:12px; font-weight:bold; color:#E7000E; padding-bottom:15px; }
+.cardown dd{ float:left; width:144px; margin:5px 34px; }
+.cardown .first{ width:63px; margin:0px; }
+.cardown .last{ width:70px; margin:0px;}
+.cardown dd a{ border:1px solid #ddd; padding: 6px 15px; margin-top:10px; display:inline-block; }
+.cardown dd h5{ color:#ff0000;}
+

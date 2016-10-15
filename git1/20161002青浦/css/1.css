@@ -1,0 +1,269 @@
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+header,section,artical,nav,footer,aside{
+	display:block;
+}
+h3{
+	font-size:12px;
+	
+}
+span{
+	font-size:12px;
+	color:#99999f;
+}
+ul li{
+	list-style:none;
+}
+header{
+	width:1380px;
+	margin:0 auto;
+	background:url(../images/imgs_04.jpg) repeat-x;
+	height:79px;
+	overflow:hidden;
+}
+header div.logo{
+	float:left;
+	margin-left:100px;
+}
+header div.login{
+	line-height:79px;
+	float:left;
+	margin-left:185px;
+}
+header div.login input{
+	height:35px;
+	width:400px;
+	border-radius:20px;
+	border:1px solid #666;
+	background:url(../images/a.png) no-repeat right;
+	text-indent:8em;
+}
+
+nav{
+	width:1380px;
+	background:#158687;
+	margin:0 auto;
+}
+nav ul{
+	width:765px;
+	margin-left:235px;
+	overflow:hidden;
+}
+nav ul>li{
+	list-style:none;
+	height:50px;
+	float:left;
+	line-height:50px;
+	color:#fff;
+	font-size:14px;
+	margin-right:45px;
+}
+nav ul>li .lastli{
+	margin-right:0;
+}
+.guanggao{
+	width:1380px;
+	margin:0 auto;
+	
+}
+
+.guanggao ul li>img{
+	display:block;
+	width:1380px;
+}
+article.outer{
+	width:1380px;
+	margin:0 auto;
+}
+article.outer div.inner{
+	width:990px;
+	margin:0 auto;
+	background:#fff;
+}
+ h1{
+	font-size:16px;
+	color:#424243;
+	padding: 25px 0px 10px 0px;
+	border-bottom:1px solid #ddd;
+	margin:0;
+	
+}
+ h1>div{
+	display:block;
+	float:left;
+	width:12px;
+	background:#a5dacc;
+	height:32px;
+	
+}
+.innerartlcle{
+
+	margin-left: 12px;
+}
+article div.one{
+	overflow:hidden;
+}
+article div.one div{
+	float:left;
+	padding:10px 10px 0 0;
+	
+}
+article div.one div img{
+	
+	width:317px;
+}
+article div.one>ul{
+	margin-top:10px;
+	width:650px;
+	float:left;
+	margin-left: -2px;
+
+	
+}
+article div.one ul li{
+	float:left;
+	margin-right:5px;
+	margin-top:4px;
+	
+}
+.two {
+	overflow:hidden;
+	
+}
+.two li{
+	float:left;
+	margin-right:6px;
+	
+}
+.downcontent{
+	overflow:hidden;
+	width:990px;
+	margin:0 auto;
+	background:#fff;	
+	
+}
+div.left{
+	float:left;
+	width:840px;
+	margin-right: 10px;
+	
+}
+div.left ul{
+	margin:10px 0 10px 20px;
+
+	
+}
+div.left li{
+	width:160px;
+	height:165px;
+	float:left;
+	margin-left:3px;
+	
+}
+.dd{
+	border-bottom:1px solid #ddd;
+	width:820px;
+	margin-left:10px;
+	margin-top:10px;
+}
+
+.threeul>li{
+	height:20px;
+	margin-right:-80px;
+	margin-top:30px;
+	margin-bottom: -120px;
+	color:#666;
+}
+.clear{
+	
+	clear:both;
+}
+.threeul>li span{
+	padding:0 10px;
+	font-size:16px;
+}
+.threeul>li .firstsspan{
+	
+	color:#000;
+}
+article.zzarticle>ul>li{
+ height: 115px;
+}
+article.zzarticle>ul>li.firstll{
+	margin-left:-80px;
+}
+.footerdiv{
+	margin: 0 auto;
+	width:990px;
+	margin:0 auto;
+}
+.footerdiv ul{
+	margin-left:20px;
+	overflow:hidden;
+	margin-right:10px;
+}
+.footerdiv ul li{
+	float:left;
+	margin-right:35px;
+	
+}
+.footerdiv ul li select{
+	display:block;
+	width:140px;
+	
+}
+.contencenter{
+	width:1350px;
+	margin:0 auto;
+	background: url(../images/22.png) repeat-x;
+	
+}
+.left{
+	float: left;
+}
+.right{
+	margin-top:-1080px;
+	float: right;
+}
+.right h2{
+	font-size: 16px;
+	margin-top:28px;
+	color: #666666;
+	padding-bottom:20px; 
+}
+.right ul{
+	margin-top:-6px;
+	padding-top:10px;
+	border-top: 1px solid #ddd;
+	margin-bottom: 30px;
+}
+.right ul>li{
+	margin-bottom:15px;
+	font-size: 14px;
+}
+.right ul>li span{
+	display: block;
+	width:20px;
+	height: 20px;
+	float: left;
+	line-height: 20px;
+	text-align: center;
+	margin-right:20px;
+	font-size: 16px;
+	background: #ddd;
+	color: #fff;
+	padding: 2px 3px;
+}
+.copy{
+	margin: 0 auto;
+	width:1380px;
+	text-align: center;
+	font-size: 14px;
+	height: 110px;
+	line-height: 110px;
+	background: url(../images/1-index_03.png) repeat-x;
+	padding: 0px;
+}

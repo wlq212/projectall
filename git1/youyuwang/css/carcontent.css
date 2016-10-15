@@ -1,0 +1,37 @@
+/* CSS Document */
+.carcontent{ width:1200px; margin: 0 auto; font-size:12px; color:#666;}
+.carcontent dt{ overflow:hidden; border-bottom:2px solid #ddd; padding-bottom:10px; padding-top:10px; position:relative;}
+.carcontent dt h3{ float:left; font-size:16px; font-weight:bold; color:#e4393c; position:absolute; border-bottom:1px solid #e4393c; padding-bottom:10px; bottom:0px; }
+.carcontent dt div{ margin-right:20px; }
+.carcontent dt div .ssss{ float:right;padding:7px 10px;  }
+.carcontent dt a{ border:1px solid #ddd; padding:6px 14px; float:right; background:url(../imgs/list/1101.png)no-repeat right; display:block; }
+.carcontent .carcententI{ overflow:hidden; background-color:#f4f4f4; padding-left:10px;}
+.carcontent .carcententI li{ float:left; padding:13px 0; margin-right:60px;  }
+.carcontent .carcententI .carcententI_I{ margin:0 450px 0 60px; }
+.carcontent .carcententI .carcententI_II{margin:0 80px 0 80px;  }
+.carcontent .carcententII{ margin-top:15px; padding:8px 10px; background-color:#f4f4f4; border:1px solid #ddd; }
+.carcententII span{ background-color:#e7000e; color:#fff; padding:3px 5px;}
+.carcententIII{ border:1px solid #ddd; border-top:0px; background-color:#fffdf0;}
+.carcententIII_II{ margin-right:300px;}
+.carcententIII_II div{ width:200px; float:left;}
+.carcententIII_II img{ float:left;}
+.carcententIII_I{ overflow:hidden; margin-left:10px; position:relative;}
+.carcententIII_I li{ float:left; padding:13px 0; }
+.carcententIII_III{ margin:0 30px 0 100px; }
+.carcententIII_IIII{ margin:0 40px 0 60px;}
+.carcententIII_I input{ margin-top:70px;}
+.carcententIII_I .ooo{ position:absolute; top:100px; left:18px;}
+.oneone{ width:80px; height:18px; border:1px solid #e7000e; text-align:center; background:url(../imgs/list/1101.png) no-repeat right; }
+.carcententIII_III a{ padding:2px 10px; border:1px solid #ddd;}
+.carcententIII_III .spancenter{ padding:2px 20px; border-bottom:1px solid #ddd; border-top:1px solid #ddd;}
+.carcententIII_III p{ text-align:center; margin-top:7px;}
+.carcententIII_I em{ font-weight:bold;}
+.jiesuan{ height:55px; border:1px solid #ddd; margin: 15px 0 45px 0; }
+.jiesuan li{  float:left;  margin-top:10px; }
+.jiesuan .jiesuanone{ margin-left:500px;}
+.jiesuan .jiesuantwo{ margin-left:30px;}
+.jiesuan .jiesuanthree{  font-weight:bold; float:right;margin-top:10px;}
+.jiesuan .jiesuanone em{ font-size:12px; font-weight:bold; color:#e54346;}
+.jiesuan .jiesuantwo em{ font-size:16px; font-weight:bold; color:#e54346;}
+.jiesuan .jiesuanthree a{font-size:18px; background-color:#e54346; padding: 11px 25px 20px 25px; color:#fff; }
+.jiesuanfour{ margin:0 40px; }

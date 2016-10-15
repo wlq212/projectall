@@ -1,0 +1,95 @@
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+	h2{
+	padding-top:20px;
+	margin:0 20px 0 20px;	
+	}
+	.return{
+		top:-20px;
+		position:relative;
+		left:540px;
+	}
+	table{ margin-top:-20px;}
+</style>
+<script>
+function loadClazzToSelect(){
+		var url="class/class.json";
+		$.get(url,function(data){
+		$("select[name='clazzId']").children("not(:first)").remove();
+		for(i=0;i<data.length;i++){
+		var optio=$("<option id='"+data[i].id+"'>"+data[i].name+"</option>");
+		$(".clazzId").append(optio);
+		};
+	});
+}
+
+$(function(){
+	//加载班级信息-select
+	alert(1);
+	loadClazzToSelect();
+	$(".return").click(function(){
+		$(".tab_content").load("tab_student.html");
+	});
+	$("form[name='formsubmit']").off("submit");
+	$("form[name='formsubmit']").submit(function(event){
+			var name=$(":text[name='name']").val();
+			var gender=$(":radio[name='gender']:checked").val();
+			var clazzId=$("select[name='clazzId']").val();
+			var url="http://192.168.1.111:80/web1601/data/student/savestudents.json";
+			$.ajax(url,{
+			dataType:"jsonp",
+			jsonp:"jsonp",
+			data:{
+				name:nameval,
+				gender:gender,
+				clazzId:clazzId
+				},
+			success:function(){
+				alert("保存成功");
+				$("form[name='formsubmit']")[0].reset();
+			},
+			error: function(){
+				alert("保存失败");
+			}
+		});
+		event.preventDefault();
+		//return false;//阻止表单默认提交
+	});
+	
+});
+</script>
+
+<h2 >录入学生信息</h2>
+<a href="javascript:void(0)" class="return">返回</a>
+ <form class="inner" name="formsubmit">
+<table>
+   
+    	<tbody>
+    		<tr>
+            	<td>姓名</td>
+                <td><input  type="text" name="name"/></td>
+            </tr>
+            <tr>
+            	<td >性别</td>
+                <td colspan="2">
+                男<input  type="radio" name="gender" value="男"  checked="checked"/>
+                女<input  type="radio" name="gender" value="女"/>
+                </td>
+            </tr>
+            <tr>
+            	<td>班级</td>
+                <td>
+                    <select name="clazzId">
+                    <option value="">请选择</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+            	<td colspan="2">
+                	<input  type="submit" value="保存"/>
+                    <input  type="reset" value="重置"/>
+                </td>
+            </tr>
+    	</tbody>
+</table>
+</form>

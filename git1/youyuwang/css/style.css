@@ -1,0 +1,191 @@
+/* CSS Document */
+.header1{width:1024px; margin:0 auto;}
+.header1 img{ margin:12px 0;}
+.content1{ background-color:#63be8f; }
+.content1 .loginbox{width:1024px; height:605px; margin:0 auto; background:url(../imgs/bg_login.png) no-repeat center; position:relative; }
+.loginbox .loginform{ width:385px; height:380px; background-color:#FFF; top:110px; right:0px; position:absolute;}
+.loginform h1{ font-size:20px; color:#666689; margin:20px 0 0 20px;}
+.loginform .msgl{margin:10px 0px 10px 20px; color:#666; width:340px; height:24px; background-color:#fff6d2; line-height:24px; border:1px solid #ffe57d;}
+.loginform .msgl .light{width:18px; height:18px; display:inline-block; background:url(../imgs/icons/1-%E9%B1%BF%E9%B1%BC%E7%BD%91%E7%99%BB%E9%99%86%E9%A1%B5%E9%9D%A2_03.png) no-repeat center; float:left; }
+.loginform .msgl .text{float:left; height:18px; line-height:18px; margin:3px 0;}
+.loginform .si_box{ overflow:hidden; width:340px; margin: 0px 0px 20px 20px; border:1px solid #bdbdbd;}
+.usr_span,.pwd_span{width:38px; height:38px; float:left; border-right:1px solid #bdbdbd; background:  #f3f3f3 url(../imgs/icons/icon_04.jpg) no-repeat center; }
+.loginform .si_box input{float:left; border:none; height:20px; margin:9px 10px; width:200px;}
+.pwd_span{ background:url(../imgs/icons/icon_05.jpg) no-repeat center;}
+.forget_box{width:340px; margin: 12px 0 0 20px; overflow:hidden;}
+.forget_box .box1{float:left; line-height:20px;}
+.forget_box .box2{float:right; line-height:20px; background:url(../imgs/icons/icon_06.png) no-repeat left; padding-left:25px;}
+.loginform input.btn_submit{
+	width:338px;
+	height:33px;
+	background-color:#e43937;
+	border:1px solid #cb2a2d;
+	margin:28px 0px 28px 20px;
+	color:#FFF;
+	font-size:20px;
+	cursor:pointer;
+}
+
+.loginform p{
+	
+	margin-left:20px;
+	
+	
+	
+}
+.loginform .com_icons{
+	margin:4px 0px 20px 20px;
+	overflow:hidden;
+	width:340px;
+
+	}
+.com_icons .tencent{
+		
+		float:left;
+		width:34px;
+		height:34px;
+		margin:0 10px;
+		background:url(../imgs/icons/icon_03.png) no-repeat center;
+		
+	}
+.footer1{
+	background-color:#FFF;
+	color:#666;
+	
+	
+}
+.footer1 .links{
+	width:550px;
+	margin:0 auto;		
+	}
+.footer1 .links a{
+	padding:0px 18px;
+
+}
+.footer1 .icp{
+	width:550px;
+	margin:0 auto;
+	text-align:center;
+	font-size:12px;
+	
+	
+}
+.footer1 img{
+	margin:16px auto 70px auto;
+	
+	
+}
+
+
+
+/* 注册页面*/
+.all{background-color:#f2f2f2;}
+.all .container2{
+	background-color:#f2f2f2;
+	position:relative;
+	margin:0 auto;
+	width:1028px;
+		
+	
+	
+}
+.container2 .header2{
+	
+	width:1028px;
+	margin:0 auto;
+	overflow:hidden;
+	border-bottom:1px solid #dddddd;
+
+}
+.header2 img{
+	padding:25px 0px;
+	float:left;
+	
+	
+	
+}
+.header2 .tabs{
+	width:340px;
+	float:left;
+	margin:0 auto;
+	overflow:hidden;
+	margin-left:90px;
+	height:40px;
+	margin-top:74px;
+	
+	
+}
+.header2 .tabs li{
+	margin:0px 4px;
+	float:left;
+	border:1px solid  #dddddd;
+	border-bottom:none;
+	position:absolute;
+	background-color:#f7f6f6;
+	text-align:center;
+	padding:0 24px;	
+	
+}
+.header2 .tabs .tabs0{
+	
+	left:380px;
+	background-color:#f7f6f6;
+}
+
+.header2 .tabs li a{
+	display:block;
+	height:40px;
+	line-height:40px;
+	background-color:#f7f6f6;
+	font-size:16px;
+	width:120px;
+	background:url(../imgs/icon_01.png) no-repeat left;
+	
+	
+}
+.header2 .tabs li .tabs1{ background:url(../imgs/icons/icon_02.png) no-repeat left;width:165px;}
+
+.header2 .logins{
+	margin:-20px 110px 0px 280px;
+	float:right;
+	font-size:12px;
+	
+}
+.header2 .logins a{ color:#396ebe;}
+
+.container2 .content2{
+	overflow:hidden;
+	width:1028px;
+	margin:0px auto 0 auto;
+	background-color:#FFF;
+	border:1px solid #dddddd;
+	border-top:0px;
+}
+
+.tabs li:hover,.tabs .tabs0:hover{
+	background:#FFF;
+	border-top:2px solid #F00;
+	
+}
+.content2 ul{
+	
+}
+.container2 .content2 ul li{
+	margin:35px 0px 35px 135px;
+}
+.container2 .content2 li input{
+	width:270px;
+	height:35px;
+}
+
+.container2 .content2 span{
+	font-size:12px;
+	margin-left:230px;
+	}
+.container2 .content2 span a{
+	color:#396ebe;
+}
+.container2 .content2 .submit_1 input{
+	background-color:e2393c;
+	margin-left:100px;	
+}

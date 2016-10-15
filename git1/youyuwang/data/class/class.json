@@ -1,0 +1,22 @@
+// JavaScript Document
+[{
+	"id":2001,
+	"className":"一年级一班",
+	"classNum":"50",
+	"master":"张嘉恒",
+	"monitor":"张三"
+	},
+	{
+	"id":2002,
+	"className":"二年级一班",
+	"classNum":"40",
+	"master":"王嘉恒",
+	"monitor":"李四"
+	},
+	{
+	"id":2003,
+	"className":"三年级一班",
+	"classNum":"60",
+	"master":"李嘉恒",
+	"monitor":"王二"
+	}]
