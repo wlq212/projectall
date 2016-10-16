@@ -1,0 +1,152 @@
+.couse_content{
+    width: 100%;
+    height: 290px;
+    background: #009688;
+    margin: 0 auto;
+}
+.couse_content_ul{
+    width:1170px;
+    margin: 0 auto;
+}
+.couse_content_ul li{
+    display: inline-block;
+    padding-top:30px;
+    padding-left: 45px;
+}
+.couse_content_center{
+    width: 555px;
+    height: 230px;
+    margin-top: -30px;
+    border-right: 1px solid #80A5A2;
+    padding-right: 20px;
+}
+.couse_content_center h1{
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+}
+.couse_content_center p{
+    text-indent: 2em;
+    color: #B9C8E0;
+    font-size: 14px;
+    font-weight: bold;
+}
+.couse_content_center div:nth-child(1){
+    padding-bottom: 90px;
+    border-bottom: 1px solid #80A5A2;
+
+
+}
+.downone>ul{
+    margin-bottom: 30px;
+}
+.lean1{
+    margin-left: -40px;
+}
+.lean1 span{
+    font-size: 12px;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #9FD3CE;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.lean1 span:before{
+    content: url(../img/4-course_21.png);
+    vertical-align: middle;
+}
+.lean2{
+    margin-left: -40px;
+    font-size: 12px;
+}
+.lean2 span{
+    font-size: 12px;
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: -10px;
+    background: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.lean3{
+    margin-left: -30px;
+}
+.lean3 span{
+    font-size: 12px;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: -10px;
+    background: #3CAC6B;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.lean4 span{
+    font-size: 12px;
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: -50px;
+    background: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.lean3 span:before{
+    vertical-align: middle;
+    content: url(../img/4-course_23.png)
+}
+.geren{
+    float: right;
+    margin-top: -140px;
+}
+.geren>div{
+    float: right;
+}
+.geren>div>div{
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.geren>div :nth-child(2){
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    background: #A6DAD5;
+    text-align: center;
+}
+.geren>div :nth-child(3){
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    background: #3BB1BF;
+    text-align: center;
+}
+.geren>div :nth-child(2):before{
+    content: url("../img/4-course_13.png");
+}
+.geren>div :nth-child(3):before{
+    content: url("../img/4-course_15.png");
+}
+.geren>div :nth-child(1){
+    color: #B9C8E0;
+    font-weight: bold;
+}
+.couse_content_all{
+    width: 100%;
+    background: ;
+}

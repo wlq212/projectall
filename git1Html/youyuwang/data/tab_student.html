@@ -1,0 +1,112 @@
+<style>
+th{ background:#666;}
+tr:hover{background:#CCF; opacity:50%;}
+.trr{display:none;}
+</style>
+<script type="text/javascript">
+$(function(){
+	var url="http://192.168.1.111:80/web1601/data/students.json";
+	$.ajax(url,{
+		dataType:"jsonp",
+		jsonp:"jsonp",
+		jsonpCallback:"loadStudent"
+		});	
+		 // 为按钮绑定事件
+		 	$(".opt_btns button").off("click");
+		  	$(".opt_btns button").click(function(){
+			  var opt=$(this).text();
+			  switch(opt){
+				  case "添加":
+				  $(".tab_content").load("addstudent.html");
+				  break;
+				  case "删除":
+				var $checkeds=$("#tbo :not(:first):checkbox:checked")
+				.map(function(index,item){
+				return item.value;
+			}).get().join();  
+			console.log($checkeds);
+			var url="http://172.16.20.87:8080/sms/delStudents";
+			$.ajax(url,{
+					dataType:"jsonp",
+					data:"jsonp",
+					success:function(){
+						alert("删除成功");
+					},
+					error: function(){
+						alert("删除失败");
+					}
+				})
+		//for(i=0;i<$ch)
+				  break;
+				  case "修改":  
+			  }  
+		  })
+		  	$(".opt_btns input:checkbox").off("change");
+			$(".opt_btns input:checkbox").change(function(){
+			var $checkbox=$(".opt_btns :checkbox");
+			   if($(this).prop("checked")){
+			  	$("tbody tr td input:checkbox:visible").prop("checked",true);
+				//prop() selected checked disabled
+				//prop("selected",false)而
+			  }else{ 
+				$("tbody tr td input:checkbox").prop("checked",false);
+				
+			  }  
+		  });
+});
+
+
+function loadStudent(data){
+		$("#tbo:not(:first)").remove();
+		data.forEach(function(item){
+		var Newtr=$(".trr").clone();
+		Newtr.removeAttr("class");
+		Newtr.find(":checkbox").val(item.id);
+		Newtr.children().eq(1).text(item.name);
+		Newtr.children().eq(2).text(item.age);
+		Newtr.children().eq(3).text(item.gender);
+		$("#tbo").append(Newtr);
+	})		
+}
+
+</script>
+
+<!--学生管理-->
+			<div class="inner">
+				<div class="selects">
+					<select name="" id="">
+						<option value="name">姓名</option>
+						<option value="clazz">班级</option>
+						<option value="grade">成绩</option>
+					</select>
+					<input type="text">
+					<input type="submit" value="search">
+				</div>
+				<table >
+					<thead>
+						<tr>
+							<th>选择</th>
+							<th>姓名</th>
+							<th>班级</th>
+							<th>性别</th>
+							<th>分数</th>
+						</tr>
+					</thead>
+					<tbody id="tbo">
+						<tr class="trr">
+                            <td><input type="checkbox" /></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+					</tbody>
+				</table>
+               
+				<div class="opt_btns">
+					<input type="checkbox" >
+					<button >添加</button>
+					<button>修改</button>
+					<button>删除</button>
+				</div>
+			</div>

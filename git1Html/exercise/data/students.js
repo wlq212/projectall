@@ -1,0 +1,1 @@
+getJSONP.cb0('[{"name":"licy"},{"age":"12"}]');

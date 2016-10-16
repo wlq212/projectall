@@ -1,0 +1,331 @@
+/* CSS Document */
+.top{
+	border-bottom:3px solid #000;
+	background-color:#EDE9E6
+	}
+	
+.top .topone{
+	width:990px;
+	margin:0 auto;
+	overflow:hidden;
+	background-color:#EDE9E6;
+
+}
+.topone .logo{
+	
+	float:left;
+	width:256px;
+	height:150x;
+	margin:30px 0px;
+
+	
+	
+}
+.top .topone ul{
+	float:right;
+	width:734px;
+	height:150x;
+	margin:60px 0px 30px 0px;
+	
+	
+}
+.topone ul li{
+	float:right;
+	margin-right:20px;:
+
+	
+	
+}
+.topone ul li a{
+	color:#4A4237;
+	
+}
+.ad{
+	background-color:#E7E8E9;
+	
+	
+}
+.ad div{
+    margin:0 auto;
+	width:1349px;
+	height:600px;
+	background:url(../images/%E9%A6%96%E9%A1%B5%E8%8E%8E%E5%A3%AB%E4%B8%B9_07.png) no-repeat     center;
+	
+	
+}
+.content{
+	background-color:#EEEAE7;
+	
+}
+.content .contentall{
+	width:990px;
+	margin:0 auto;
+	overflow:hidden;
+	
+	
+}
+.content .contentall .one{
+	width:990px;
+	height:470px;
+	background:url(../images/%E9%A6%96%E9%A1%B5%E8%8E%8E%E5%A3%AB%E4%B8%B9_11.png) no-repeat     center;
+	
+}
+.content .contentall .two{
+	width:990px;
+	height:215px;
+	
+	
+	
+}
+.contentall .two li{
+	width:325px;
+	margin-right:5px;
+	float:left;
+	
+	
+	
+}
+
+.content .contentall .three{
+	width:990px;
+	height:490px;
+	background:url(../images/%E9%A6%96%E9%A1%B5%E8%8E%8E%E5%A3%AB%E4%B8%B9_20.png) no-repeat     center;
+	margin-top:25px ;
+	margin-bottom:25px;
+	
+	
+	
+}
+.content .contentall .four{
+	border-top:15px solid #000;
+	width:990px;
+	overflow:hidden;
+	background-color:#F0EFF1;
+	
+}
+.contentall .four .left{
+	width:590px;
+	overflow:hidden;
+	margin-top:15px;
+	margin-left:20px;
+	float:left;
+	
+}
+.four .left dl{
+	height:225px;
+	float:left;
+	background-color:#F0EFF1;
+	width:145px;
+	border-right:1px solid  #666;
+	
+	
+	
+	
+}
+.four .left dl dt{
+	height:55px;
+	width:145px;
+	border-bottom :1px solid #666;
+	text-align:center;
+	line-height:55px;
+	font-size:16px;
+	color:#4C4B4C;	
+}
+
+.four .left dl .first{
+	border-left:0px;
+	
+	
+}
+.four .left dl .last{
+	border-right:0px ;
+	
+}
+.four .left dl dd{
+	
+	width:150px;
+	text-align:center;
+	color:#777777;
+	
+	
+}
+.four .left dl dd a{
+	color:#777;
+	
+	
+}
+.four .center{
+	margin:0 40px;
+	background-color:#F0EFF1;
+	float:left;
+	height:225px;
+	width:130px;
+	margin-top:15px;	
+}
+.four .right{
+	
+	float:right;
+	width:170px;
+	height:225px;
+	background-color:#F0EFF1;
+	margin-right:0px;
+	margin-top:15px;
+	
+}
+.four .center .one1{
+	background:url(../images/%E9%A6%96%E9%A1%B5%E8%8E%8E%E5%A3%AB%E4%B8%B9_23.png) no-repeat;
+	background-position:center;  
+	height:90px;
+	
+	
+}
+.four .center .one2 li{
+	color:#999999;
+	
+	
+	
+}
+.center .one2 .lione{
+	margin-bottom:20px;
+	
+}
+.center .one2 .litwo{
+	margin-top:-5px;
+	
+}
+
+.four .right .img1{
+	display:block;
+	margin-bottom:12px;
+	border-bottom:1px solid #666;
+	
+	
+	
+}
+.four .right .img2{
+	display:block;
+	margin-top:12px;
+	border-top:1px solid #666;
+	
+	
+	
+}
+.five,.seven,.ten,.ten1{
+	background:url(../images/%E9%A6%96%E9%A1%B5%E8%8E%8E%E5%A3%AB%E4%B8%B9_56.png);
+	height:97px;
+	margin:20px 0px;	
+}
+.six{
+	overflow:hidden;
+	
+}
+.six .six1,.enlight .six1,.night .six1,.ten11 .six1{
+	height:620px;
+	width:295px;
+	float:left;
+	background-color:#FFF;
+	
+}
+.six .six2,.enlight .six2,.night .six2,.ten11 .six2{
+	overflow:hidden;
+	width:695px;
+	background-color:#FFF;
+}
+.six .six2 div,.enlight .six2 div,.night .six2 div,.ten11 .six2 div{
+	float:left;
+	margin-right:9px;
+	margin-bottom:15px;
+	background-color:#FFF;
+	width:225px;
+	height:295px;
+	text-align:center;
+	
+}
+.six .six2 div.one11,.enlight .six2 div.one11,.night .six2 div.one11,.ten11 .six2 div.one11{
+	margin-right:0px;
+	width:225px;
+	height:295px;
+	
+}
+.six .six2 div.two11,.enlight .six2 div.two11,.night .six2 div.two11,.ten11 .six2 div.two11 {
+	width:225px;
+	height:295px;
+	margin-right:0px;
+}
+.six .six2 div a,.enlight .six2 div a,.night .six2 div a,.ten11 .six2 div a{
+	color:#232323;
+	
+	
+}
+.footer{
+	
+	border-top:7px solid #000;
+	background-color:#EBE7E4;
+}
+.footer .footerall{
+	margin:0 auto;
+	width:990px;
+	overflow:hidden;
+}
+.footerall .one{
+	
+	float:left;
+	margin-left:0px;
+	width:270px;
+	background-color:#EBE7E4;
+	height:155px;
+	background:url(../images/%E9%A6%96%E9%A1%B5%E8%8E%8E%E5%A3%AB%E4%B8%B9_60.png) no-repeat center;
+	
+}
+.footerall .two{
+	float:left;
+	width:250px;
+	background-color:#EBE7E4;
+	height:155px;
+	
+	 
+	
+	
+}
+.footerall .two ul{
+	margin-top:27px;
+	
+	
+}
+.footerall .two li{
+	float:left;
+	margin-right:0px;
+	
+	
+	
+	
+}
+.footerall .three{
+	
+	float:left;
+	width:470px;
+	margin-right:0px;
+	background-color:#EDE9E6;
+	height:155px;
+	
+}
+.footerall .three li{
+	
+	float:right;
+	margin-left:20px;
+}
+.footerall .three li a{
+	color:#A69A94;
+	
+	
+}
+.footerall .three div{
+	background:url(../images/%E9%A6%96%E9%A1%B5%E8%8E%8E%E5%A3%AB%E4%B8%B9_68.png) no-repeat bottom;
+	height:155px;
+	
+	margin-top:
+	
+	
+	
+	
+	}

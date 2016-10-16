@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>多级联动</title>
+	<script type="text/javascript" src="js/jquery-2.1.4/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		//加载年级信息
+		loadGradeData();
+		$("#grade").change(function(){
+			var gradeId = $(this).val();
+			if(gradeId){
+				//取消班级上的禁用
+				console.log($("#clazz"));
+				$("#clazz").removeAttr("disabled");
+				//加载班级的信息
+				loadClazzData(gradeId);
+				$("#clazz").change(function(){
+					var studentId = $(this).val();
+					if(studentId){
+
+					$("#student").removeAttr("disabled");
+					loadStudentData(studentId);
+					}else{
+					$("#student").children(":not(:first)").remove();
+					$("#student").attr("disabled","disabled");
+					}
+
+				});
+
+
+			}else{
+				//为班级添加禁用
+				$("#clazz").children(":not(:first)").remove();
+				$("#student").children(":not(:first)").remove();
+				$("#clazz").attr("disabled","disabled");
+				$("#student").attr("disabled","disabled");
+			}
+
+		});
+
+	});
+
+	function loadStudentData(g_id){
+		$.getJSON("data/student.json",function(data){
+			$("#student").children(":not(:first)").remove();
+			data.forEach(function(item){
+				if(item.c_id == g_id){
+					var oo = $("<option value='"+item.studentId+"'>"+item.studentName+"</option>");
+					$("#student").append(oo);
+				}
+				
+			});
+		});
+	};
+	function loadClazzData(g_id){
+		$.getJSON("data/clazz.json",function(data){
+			$("#clazz").children(":not(:first)").remove();
+			data.forEach(function(item){
+				if(item.g_id == g_id){
+					var oo = $("<option value='"+item.clazzId+"'>"+item.clazzName+"</option>");
+					$("#clazz").append(oo);
+				}
+				
+			});
+		});
+	};
+	function loadGradeData(){
+		//请求数据
+		$.getJSON("data/grade.json",function(grades){
+			console.log(grades);
+			$("#grade").children(":not(:first)").remove();
+			grades.forEach(function(item){
+				var oo = $("<option value='"+item.gradeId+"'>"+item.gradeName+"</option>");
+				$("#grade").append(oo);
+			});
+		})
+	}
+	</script>
+</head>
+<body>
+	年级:
+	<select name="grade" id="grade">
+		<option value="">请选择</option>
+
+	</select>
+	班级:
+	<select name="clazz" id="clazz" disabled="disabled">
+		<option value="">请选择</option>
+	</select>
+	学生:
+	<select name="student" id="student" disabled="disabled">
+		<option value="">请选择</option>
+	</select>
+</body>
+</html>

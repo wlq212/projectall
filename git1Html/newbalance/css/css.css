@@ -1,0 +1,186 @@
+p,span,ul,body,{ margin:0px; padding:0px;}/*顶部*/
+a{ text-decoration:none; color:#FFF;}
+ul{list-style:none;}
+.header{ background-color:#232323;  overflow:hidden; }
+.header div{
+	width:1170px;
+	margin:0 auto;
+	
+	
+}
+.header .logo{ width:150px; height:55px;background-color:#232323; float:left; background: url(../newimg/images/NB%E4%B8%AD%E5%9B%BD%E5%AE%98%E7%BD%91-%E9%A6%96%E9%A1%B5_01.png) no-repeat center;}
+.header .nav{ width:350px;  background-color:#232323; float:left; margin:-5 auto;}
+.header .nav ul li{list-style:none; float:left; line-height:55px; margin:-10 25px;}
+.header .nav ul li a{color:#FFF;}
+.header .nav ul .navlast{
+	 float:right;
+	 width:105px;
+	 height:55px;
+	 margin-top:-45px;
+
+
+}
+.header .nav ul .navlast a img{
+	margin:20px 0px 20px 30px;
+	width:40px;
+	float:left;
+	
+}
+.header .search{ width:360px; height:55px; background-color:#FFF; float:right; background:url(../newimg/images/NB%E4%B8%AD%E5%9B%BD%E5%AE%98%E7%BD%91-%E9%A6%96%E9%A1%B5_05.png) no-repeat center; margin-right:2px; }
+.header .search input{
+	margin-top:10px;
+	margin-left:34px;
+	display:block;
+	height:0.7cm;
+	width:6cm;
+	background-color:#E7E7E7;
+	border:0px;
+	
+	
+	
+	
+}
+.header .location{ width:100px; height:55px; background-color:#00C; float:right; background:url(../newimg/images/NB%E4%B8%AD%E5%9B%BD%E5%AE%98%E7%BD%91-%E9%A6%96%E9%A1%B5_07.png) no-repeat center; cursor:pointer;}
+.ad{
+	margin:0 auto;
+	
+	
+}
+.ad div{ height:475px; background-color:#ededed; background-image:url(../newimg/images/NB%E4%B8%AD%E5%9B%BD%E5%AE%98%E7%BD%91-%E9%A6%96%E9%A1%B5_08.png); background-position:center; background-repeat:no-repeat; margin:0 auto; }
+.focus{  background-color:#FFF;}
+.focus div{ width:1070px; height:50px; background-color:#EDEDED; margin:0 auto; text-align:center; line-height:50px;}/*居中容器*/
+.products{   background-color:#ededed;}/*产品*/
+.11{background-color:##EDEDED;}
+.products div{ width:1070px;  overflow:hidden; background-color#EDEDED; margin:0 auto; text-align:center; line-height:50px;}
+.products div .product{ width:520px; margin-bottom:30px; height:290px; background-color:#EDEDED; float:left; margin-right:30px;}
+.products div.right{  margin-right:0px; }
+.products div.last{ width:1070px; height:320px;margin:0 auto; background-color:#FFF;
+color:#FFF;
+}
+.products div.last img{
+	float:left;
+	margin-left:0px;
+	
+}
+.products div.last a{
+float:left;		
+width:520px;
+	
+	
+}
+.products div.last span{
+	width:520px;
+	margin-right:0px;
+	float:right;
+	background-color:#000;
+	height:320px;
+
+}
+.products div.last span h1{
+	color:#FFF;
+	margin-top:-20px;
+	
+	
+}
+
+.products div.last span .p2 {
+	line-height:20px;
+	
+}
+.products div.last span .p3 .a1{
+
+	border:1px solid;
+	border-color:#FFF;
+	width:100px;
+	height:45px;
+	display:block;
+	margin-left:1px;
+	margin-top:-5px;
+	padding-left:30px;
+	
+}
+
+.info{ overflow:hidden; background-color:#FFF; border-bottom:1px solid #545454; }
+.info div a{
+	width:1170px;
+	margin:0 auto;
+	height:180px;
+	font-size:12px; 
+   color:#333;
+}
+.info div li{
+	margin:10px 0px;
+	
+}
+.info .one{
+	width:180px;
+	margin-left:100px;
+	margin-right:80px;
+	float:left;
+	margin-top:70px;
+	
+	
+}
+.info .two{
+	width:160px;
+	margin-right:105px;
+		float:left;
+		margin-top:70px;
+}
+.info .three{
+	width:250px;
+	margin-right:80px;
+	float:left;
+	margin-top:70px;
+}
+.info .three .three2 a{
+	color:#DF1E3B;
+	border:1px solid #DF1E3B;
+	margin-left:10px;
+}
+
+.info .three .a1 a{
+	color:#DF1E3B;
+	border:1px solid #DF1E3B;
+	margin-left:10px;
+}
+.info .four{
+	width:130px;
+	margin-right:60px;
+	float:left;
+	margin-top:70px;
+}
+.foots{ background-color:#FFF; }
+.foots .footsone{
+	 margin:0 auto;
+	 overflow:hidden;
+	 font-size:12px;
+	 width:1170px; 
+	 
+
+}
+.foots .footsone .footsone1{
+	float:left;
+	margin-right:125px;
+	margin-left:115px;
+	height:48px;
+	width:130px;
+	}
+.foots .footsone .footsone2{
+	float:left;
+	margin-left:30px;
+	height:48px;
+	width:260px;
+	padding-top:-20px;
+	
+	
+	}
+.foots  div .footsone .footsone2 span{
+	margin:0px;
+	float:left;
+
+
+	
+	
+}
+	

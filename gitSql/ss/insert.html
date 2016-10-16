@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="framwork/jquery-2.1.4/jquery.min.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/insert.js"></script>
+</head>
+<body>
+<article id="inserform">
+    <section>
+        <h1>添加学生信息</h1>
+    </section>
+    <section>
+        <form action="javascript:void(0)" id="formone">
+            <label for="stuid">编号</label><input type="text" id="id" name="id" autocomplete="of"  required><br/>
+            <label for="stuid">学号</label><input type="number" id="stuid" name="stuid" autocomplete="of" required pattern="^/D{6}/$" >
+            <br/>
+            <label for="name">姓名</label><input type="text" id="name" name="name" autocomplete="of"><br/>
+            <br/>
+            <label for="age">年龄</label><input type="number" id="age" name="age" autocomplete="of">
+            <br/>
+            <label for="address">地址</label><input type="text" id="address" name="address" autocomplete="of"><br/>
+            <input type="submit" value="保存">
+            <button ><a href="sqlLite.html">关闭</a></button>
+        </form>
+    </section>
+
+</article>
+</body>
+</html>

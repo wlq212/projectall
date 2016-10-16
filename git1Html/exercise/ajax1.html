@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AJAX-XML</title>
+<style>
+	table{width:400px; border-collapse:collapse;}
+	table td,th{border:1px solid #ccc;}
+</style>
+<script type="text/javascript">
+window.onload = function(){
+	var btns = document.getElementsByTagName("button");
+	var tbody = document.getElementsByTagName("tbody")[0];
+	btns[0].onclick = function(){
+		//初始化表格
+		Array.prototype.slice.call(tbody.children,0).forEach(function(item){
+			item.parentNode.removeChild(item);	
+		});
+		//加载数据
+		getXMLData("data/students.xml"
+		,function(data){
+			var stus = data.children[0].children;
+			stus = Array.prototype.slice.call(stus,0);
+			stus.forEach(function(stu){
+				var newTr = document.createElement("tr");
+				var id = stu.getAttribute("id");
+				var idTd =  document.createElement("td");
+				idTd.textContent = id;
+				newTr.appendChild(idTd);
+				var attrs = stu.children;
+				for(var i=0;i<attrs.length;i++){
+					var newTd =  document.createElement("td");
+					newTd.textContent = attrs[i].textContent;
+					newTr.appendChild(newTd);
+				}
+				tbody.appendChild(newTr);
+			});
+		});
+		/*
+		getTextData("data/students.json"
+		,function(data){
+			console.log(data);
+		});
+		*/
+	};
+};
+//封装 get请求-XML
+function getXMLData(url,callback){
+	//发送请求
+	var request =new XMLHttpRequest();
+	request.open("GET",url);
+	request.send();
+	//处理响应
+	request.onreadystatechange = function(){
+		if(request.readyState === 4 && request.status === 200){
+			//获取到响应的文本数据
+			var dom = request.responseXML;
+			callback(dom);
+		}
+	};
+}
+//封装 get请求
+function getTextData(url,callback){
+	//发送请求
+	var request =new XMLHttpRequest();
+	request.open("GET",url);
+	request.setRequestHeader("Content-type","text/plain;charset=UTF-8");
+	request.send();
+	//处理响应
+	request.onreadystatechange = function(){
+		if(request.readyState === 4 && request.status === 200){
+			//获取到响应的文本数据
+			var text = request.responseText;
+			callback(text);
+		}
+	};
+}
+
+</script>
+</head>
+
+<body>
+	<h1>从服务器上请求的html文件</h1>
+    <button>get请求</button>
+    <table>
+    <thead>
+    	<tr>
+        	<th>选择</th>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+        </tr>
+    </thead>
+    <tbody>
+    	
+        
+        
+    </tbody>
+    </table>
+</body>
+</html>

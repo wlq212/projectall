@@ -1,0 +1,256 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>表单过滤器</title>
+	<style type="text/css">	
+		table{width:100%;border-collapse: collapse;}
+		table td{border:1px solid #ccc;}
+		table td.l1{background-color: #ddd}
+		table td.msg{color: #f00;width:240px; font-size: 12px;}
+		table td.msg span{display: none; color: #f00;}
+	</style>
+	<script type="text/javascript" src="js/jquery-2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="encodeformData.js"></script>
+	<script type="text/javascript" src="getData.js"></script>
+<script type="text/javascript">
+function add1(){
+$.getJSON("Jason.json",function(grade){
+$("#address1").children(":not(:first)").remove();
+grade.forEach(function(item){
+var tt=$("<option value='"+item.sheng_id+"'>"+item.name+"</option>");
+$("#address1").append(tt);
+});
+});
+};
+
+function add2(grade1){
+
+$.getJSON("shi.json",function(grade){
+$("#address2").children(":not(:first)").remove();
+
+grade.forEach(function(item){
+	if(item.t_id==grade1){
+	var tt1=$("<option value='"+item.shi_id+"'>"+item.name+"</option>");
+
+	$("#address2").append(tt1);
+}
+});
+});
+};
+
+function add3(grade2){
+
+$.getJSON("qu.json",function(grade){
+$("#address3").children(":not(:first)").remove();
+
+grade.forEach(function(item){
+	if(item.t_id==grade2){
+	var tt2=$("<option value='"+item.id+"'>"+item.name+"</option>");
+
+	$("#address3").append(tt2);
+}
+});
+});
+};
+
+
+
+
+$(function(){
+//加载省份信息	
+add1();
+$("#address1").change(function(){
+	var sheng_id=$(this).val();
+	if(sheng_id){
+			$("#address2").removeAttr("disabled");
+			//加载市信息
+			add2(sheng_id);
+			$("#address2").change(function(){
+				var id11=$(this).val();
+			if(id11){
+				$("#address3").removeAttr("disabled");
+				add3(id11);
+			}else{	
+				$("#address3").children(":not(:first)").remove();
+				$("#address3").attr("disabled","disabled");	
+			}
+			})
+	}else{
+			
+			$("#address2").children(":not(:first)").remove();
+			$("#address3").children(":not(:first)").remove();
+			$("#address2").attr("disabled","disabled");	
+			$("#address3").attr("disabled","disabled");	
+		}
+	
+});
+
+
+
+});
+
+
+$(function(){
+	var text;
+	var pass;
+	var name;
+	var dd;
+	var pass1;
+	var name11;
+	var gender=$("input:radio:checked").val();
+	var img=$("input:file").val();
+	var textarea=$("textarea").val();
+	$("#username").blur(function(event){
+		text=$("#username").val();
+		var partten1=/^1\d{10}$/;
+		 dd=partten1.test(text);
+		if(dd==false){
+		$(".msg span:contains('用户名')").css("display","block");
+		
+	}else{
+
+		$(".msg span:contains('用户名')").css("display","none");
+	}
+		
+	});
+	$("#pass").blur(function(event){
+		pass=$("#pass").val();
+		var Password1=/^\w{6,15}$/
+		 pass1=Password1.test(pass);
+		if(pass1==false){
+		$(".msg span:contains('密码')").css("display","block");
+	
+		
+	}else{
+
+		$(".msg span:contains('密码')").css("display","none");
+	}
+		
+	});
+	$("#myname").blur(function(event){
+		name=$("#myname").val();
+		var name1=/^\W{2,4}$/
+		 name11=name1.test(name);
+		if(name11==false){
+		$(".msg span:contains('不能为空')").css("display","block");
+		
+	}else{
+		$(".msg span:contains('不能为空')").css("display","none");
+	}
+		
+	});
+
+	$("#submit").on("click",function(event){
+	if(name11==false||pass1==false||dd==false){
+		event.preventDefault();
+	}
+	var hobby=$("input:checkbox:checked");
+	var cc=[];
+	hobby.each(function(index,item){
+		cc.push($(this).val());
+	});
+	var select1=$("#address1").select().val();
+	var select2=$("#address2").select().val();
+	var select3=$("#address3").select().val();
+		var request=new XMLHttpRequest();
+		request.open("POST","ajax1.html");
+		var obj={username:text,password:pass,name:name,gender:gender,hobby:cc,file:img,address:select1+" "+select2+" "+select3,description:textarea};
+		console.log(obj);
+		request.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+		var str = encodeFormData(obj);
+		console.log(str);
+		request.send(str);
+		
+
+	
+		
+});
+});
+	
+
+
+
+
+</script>
+</head>
+<body>
+<div style="width:600px; margin:0 auto;text-align:center" >
+	<h1>用户信息填写</h1>
+	<form name="userForm" action="ajax1.html" enctype="application/x-www-form-urlencoded" >
+	<table>
+	<tr>
+		<td class="l1">用户名：</td>
+		<td>
+			<input id="username" type="text" name="username"/>
+
+		</td>
+		<td class="msg" id="msg"><span>用户名得为正确的手机号格式</span> </td>
+	</tr>
+	<tr>
+		<td class="l1">密码：</td>
+		<td>
+			<input type="password" name="password" id="pass" />
+		</td>
+		<td class="msg"  ><span id="span2"> 密码不少于6个字符 <span></td>
+	</tr>
+	<tr>
+		<td class="l1">姓名：</td>
+		<td>
+			<input type="text" name="realname" id="myname"/>
+		</td>
+		<td class="msg"><span> 姓名不能为空<span></td>
+	<tr>
+	<tr>
+		<td class="l1">性别：</td>
+		<td colspan="2">
+			男<input type="radio" value="male" name="gender" checked="checked"> 
+			女<input type="radio" value="female" name="gender">
+		</td>
+	</tr>
+	<tr>
+		<td class="l1">爱好：</td>
+		<td colspan="2">
+			篮球<input type="checkbox" name="hobby" value="basketball"> 
+			足球 <input type="checkbox" name="hobby" value="football" checked="checked"> 
+			游泳<input type="checkbox" name="hobby" value="swimming"> 
+			跑步<input type="checkbox" name="hobby" value="run">
+		</td>
+	</tr>
+	<tr>
+		<td class="l1">地址：</td>
+		<td colspan="2">省
+			<select name="address1" id="address1">
+				<option value="">请选择</option>
+			</select>市
+			<select name="address2" id="address2" disabled="disabled">
+				<option value="">请选择</option>
+			</select>区
+			<select name="address3" id="address3" disabled="disabled">
+				<option value="">请选择</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td class="l1">照片：</td>
+		<td colspan="2">
+			<input type="file" name="photo"/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td class="l1">简介：</td>
+		<td colspan="2">
+			<textarea name="description" cols="30" rows="10">请输入您的基本信息</textarea>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<input id="submit" type="submit" value="提交">
+			
+		</td>
+	</tr>
+	</table>
+	</form>
+</div>
+</body>
+</html>

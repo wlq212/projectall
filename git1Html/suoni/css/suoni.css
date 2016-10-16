@@ -1,0 +1,62 @@
+/* CSS Document */
+ul,body{margin:0px; padding:0px;}
+a{ text-decoration:none; color:#FFF;}
+.header{ background-color:#000000; overflow:hidden;width:1355px; margin:0 auto;}
+.header div{ width:930px; margin:0 auto; }
+.header .logo{ margin:0 auto; overflow:hidden; }
+.header .logo .leftlogo{ height:52px; width:465px; background-color:#F00; float:left; background-image:url(../../img/%E7%B4%A2%E5%B0%BC%E4%B8%AD%E5%9B%BD_02.png); margin:-10px auto;}
+.header .logo .rightlogo{height:52px; width:465px; background-color:#000; float:left; margin-right:0px;}
+.header .logo .rightlogo ul li{list-style:none; float:right; color:#FFF;margin-right:20px;  }
+.header .nov{overflow:hidden; margin:0 auto;}
+
+.header .nov .novleft{ height:53px; width:620px; background-color:#000; color:#FFF; float:left; text-align:center; line-height:53px;}
+.header .nov .novleft ul li{ list-style:none; float:left; line-height:53px;  text-align:center; background-color:#000;margin-right:25;}
+.header .nov .novright{ height:40px; margin:0 auto; text-align:right; line-height:40px;width:305px; background-color:#000; background-image:url(../img/%E7%B4%A2%E5%B0%BC%E4%B8%AD%E5%9B%BD_03.png); background-position:right;background-repeat:no-repeat; color:#000;float:right;}
+.ad{ overflow:hidden; background-color:#FFF; margin:0 auto;   }
+.ad div{height:520px; width:1170px; margin:0 auto;background-color:#FFF;background-image:url(../img/%E7%B4%A2%E5%B0%BC%E4%B8%AD%E5%9B%BD_01_05.png);background-repeat:no-repeat;background-position:center; margin:0 auto;}
+.blank{ height:40px; background-color:#FFF; }
+.blankone{ height:54px; background-color:#FFF; }
+.blanktwo{ height:43px; background-color:#FFF; }
+.newproducts{ overflow:hidden;margin:0 auto;  }
+.newproducts .newproductstop{overflow:hidden; width:950px; margin:0 auto;}
+.newproducts .newproductstop .one{height:50px; width:475px; background-color:#FFF; text-align:center; line-height:50px; float:left;}
+.newproducts .newproductstop .two{height:50px; width:475px; background-color:#FFF; float:left; text-align:right; line-height:40px; background-repeat:no-repeat; display:block;}
+.newproducts .newproductsdown{overflow:hidden;  margin:0 auto; width:1355px; text-align:center;}
+.newproducts .newproductsdown .one{ height:270px; width:200px; background-color:#EFF0F1; margin-right:7px; float:left; margin-left:0px; background-image:url(../img/%E7%B4%A2%E5%B0%BC%E4%B8%AD%E5%9B%BD_07.png); background-repeat:no-repeat;}
+.newproducts .newproductsdown .two{ height:270px; width:230px; background-color:#EFF0F1; margin-right:7px; float:left; background-image:url(../img/%E7%B4%A2%E5%B0%BC%E4%B8%AD%E5%9B%BD_08.png); background-repeat:no-repeat; }
+.newproducts .newproductsdown .three{ height:270px; width:230px; background-color:#EFF0F1; margin-right:7px; float:left; background-image:url(../img/%E7%B4%A2%E5%B0%BC%E4%B8%AD%E5%9B%BD_031.png); background-repeat:no-repeat;}
+.newproducts .newproductsdown .four{ height:270px; width:230px; background-color:#EFF0F1; margin-right:7px; float:left; background-image:url(../img/%E7%B4%A2%E5%B0%BC%E4%B8%AD%E5%9B%BD_10.png); background-repeat:no-repeat;}
+.newproducts .newproductsdown .five{ height:270px; width:230px; background-color:#EFF0F1; margin-right:7px; float:left; background-image:url(../img/%E7%B4%A2%E5%B0%BC%E4%B8%AD%E5%9B%BD_11.png); background-repeat:no-repeat;}
+.newproducts .newproductsdown .six{ height:270px; width:200px; background-color:#EFF0F1;margin-right:0px; float:left; background-image:url(../img/%E7%B4%A2%E5%B0%BC%E4%B8%AD%E5%9B%BD_12.png); background-repeat:no-repeat;}
+.news{  overflow:hidden;background-color:FFF; margin-top:270px;}
+.news .newsall{ height:700px; background-color:#F0F1F3; width:1200; margin:43 auto; margin:0px auto; }
+.news .newsall .newsall1{ width:920px; overflow:hidden; margin:0 auto; }
+.news .newsall .newsall1 .newsallone{ width:290px;overflow:hidden; margin:0 auto;margin-right:35px; background-color:#F0F1F3; float:left;}
+.news .newsall .newsall1 .newsallone .newsallonetop{ width:290px; height:40px; background-color:#F0F1F3;  line-height:40px;}
+.news .newsall .newsall1 .newsallone div{ width:290px; height:85px; margin-bottom:7px; background-color:#F0F1F3;}
+.news .newsall .newsall1 .newsalltwo{ width:275px;overflow:hidden;margin:0 auto; margin-right:35px; background-color:#F0F1F3; float:left;}
+.news .newsall .newsall1 .newsalltwo div{ width:290px; height:85px; margin-bottom:7px;background-color:#F0F1F3;}
+.news .newsall .newsall1 .newsalltwo .newsalltwotop{ width:275px; height:40px;background-color:#F0F1F3; line-height:40px;}
+.news .newsall .newsall1 .newsallthree{ width:280px;overflow:hidden;margin:0 auto; margin-right:0px;background-color:#F0F1F3; float:left;}
+.news .newsall .newsall1 .newsallthree div{ width:290px; height:85px; margin-bottom:7px;background-color:#F0F1F3;}
+.news .newsall .newsall1 .newsallthree .newsallthreetop{ width:280px; height:40px;background-color:#F0F1F3;line-height:40px;}
+.sconpany{overflow:hidden;background-color:#FFF; margin:0 auto;}
+.sconpany .sconpanyone{overflow:hidden; width:950px; margin:0 auto; }
+.sconpany .sconpanyone .sconpanyname{ overflow:hidden;overflow:hidden; width:950px; margin:0 auto;}
+.sconpany .sconpanyone .sconpanyname .sconpanynameleft{ width:472.5px; background-color:#FFF; height:42px;  text-align:left; float:left; line-height:42px; }
+.sconpany .sconpanyone .sconpanyname .sconpanynameright{ width:472.5px;height:42px; background-color:#FFF; text-align:center;line-height:42px; float:left;}
+.sconpany .sconpanyone .sconpanylogo{ overflow:hidden; width:950px; margin:0 auto; }
+.sconpany .sconpanyone .sconpanylogo .sconpanylogo1{ width:150px; height:120px;float:right; background-color:#1F2024; margin-right:7px; background-image:url(../img/%E7%B4%A2%E5%B0%BC%E4%B8%AD%E5%9B%BD_37.png)}
+.sconpany .sconpanyone .sconpanylogo .sconpanylogo2{ width:150px; height:120px;float:right; background-color:#90F; margin-right:7px; background-image:url(../img/%E7%B4%A2%E5%B0%BC%E4%B8%AD%E5%9B%BD_38.png)}
+.sconpany .sconpanyone .sconpanylogo .sconpanylogo3{ width:150px; height:120px;float:right; background-color:#1F2024; margin-right:7px; background-image:url(../img/%E7%B4%A2%E5%B0%BC%E4%B8%AD%E5%9B%BD_39.png)}
+.sconpany .sconpanyone .sconpanylogo .sconpanylogo4{ width:150px; height:120px;float:right; background-color:#1F2024; margin-right:7px; background-image:url(../img/%E7%B4%A2%E5%B0%BC%E4%B8%AD%E5%9B%BD_40.png)}
+.sconpany .sconpanyone .sconpanylogo .sconpanylogo5{ width:150px; height:120px;float:right; background-color:#1F2024; margin-right:7px; background-image:url(../img/%E7%B4%A2%E5%B0%BC%E4%B8%AD%E5%9B%BD_41.png)}
+.sconpany .sconpanyone .sconpanylogo .sconpanylogo6{ width:150px; height:120px;float:right; background-color:#1F2024; margin-right:7px; background-image:url(../img/%E7%B4%A2%E5%B0%BC%E4%B8%AD%E5%9B%BD_36.png)}
+.shoppingplace{   background-color:#1F2024; margin:0 auto; overflow:hidden; border-bottom:1px  ridge #FFF;}
+.footers{ height:102px; background:#1F2024;  margin:0 auto;}
+.footers .footersall{  width:955px; margin:0 auto;}
+.footers .footersall div{ height:23px; background-color:#1F2024; width:955px;}
+.footers .footersall div ul li{ height:23px;color:#FFF; margin-right:35px; float:left; margin-top:15px;line-height:23px;list-style:none; }
+.footers .footersall .one{ height:35px; background-color:#FFF; width:955px;}
+.footers .footersall .one div ul li{ height:35px; color:#FFF; float:left; margin-top:0px;line-height:35px;list-style:none; margin-right:28px; }
+.footers .footersall .one .one1 ul li{ height:35px; color:#FFF; float:right; margin-top:-25px;line-height:35px;list-style:none; margin-right:0px;}

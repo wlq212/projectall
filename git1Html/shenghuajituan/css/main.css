@@ -1,0 +1,378 @@
+
+/*头部*/
+.header{	
+	}
+	
+.header .banner1{
+	overflow:hidden;
+ 
+}
+.banner1 table{
+	width:560px;
+	 border-spacing:0px;
+	  margin:5px 90px 5px 0;
+	  float:right;
+	}
+.search input{
+	height:28px;
+	border:0px;
+	float:left;
+	width:133px;
+	
+}
+.search{
+	border:1px solid #d8d8d8;
+	width:163px;
+	}
+.search span{
+	
+	width:30px;
+	height:28px;
+	float:right;
+	line-height:28px;
+	cursor:pointer;
+	
+}
+.header .banner2{
+	overflow:hidden;
+	
+}
+	
+.banner2 .logo{
+	width:185px;
+	height:55px;
+	float:left;
+	margin:15px 0px 15px 90px;
+	background:url(../images/logo.png) no-repeat center;
+	}
+.nav{
+ overflow:hidden;
+ margin:45px 60px 15px 0px;
+ float:right;
+}
+
+.nav li{
+	float:left;
+	height:25px;
+	line-height:25px;
+	margin-right:55px;
+	}
+.nav a{
+		color:#000000;
+		font-size:16px;
+		font-weight:bolder;
+	}
+/*广告*/
+.ad{
+  height:505px;
+  background:url(../images/ad.png) no-repeat center;
+  background-color:#000;
+}
+/*标题*/
+.banner span{
+	display:block;
+	width:640px;
+	height:75px;
+	background:url(../images/index_text.png) no-repeat center;
+	margin:50px auto;
+	}
+	
+/*内容*/
+.cotent{
+	height:1110px;
+	width:1170px;
+	background-color:#FFF;
+	margin:0 auto;
+	color:#000;
+}
+.banner3{
+	
+}
+.banner3 ul{
+	overflow:hidden;
+}
+.banner3 ul li{
+	width:270px;
+	height:200px;
+	float:left;
+	background-color:#FFF;
+}
+.banner3 ul .split{
+	width:30px;
+	background-color:#FFF;
+}
+.banner3 h1{
+	font-size:16px;
+	font-weight:bold;
+	text-align:center;
+	height:20px;
+	line-height:20px;
+	margin:15px 0px;
+	color:#000;
+}
+.banner3 a{
+	color:#e10600;
+}
+.banner4 ul{
+	overflow:hidden;
+	
+}
+.banner4 .left{
+	margin-right:30px;
+	float:left;
+	background-color:#FFF;
+	
+	
+}
+.banner4 .left  span{
+	font-size:24px;
+	height:30px;
+	line-height:30px;
+	color:#e10600;
+	margin:18px 0px;
+    float:left;
+}
+.banner4 .left h1{
+	overflow:hidden;
+}
+.banner4 .left  a{
+	font-size:16px;
+	height:30px;
+	line-height:30px;
+	color:#e10600;
+    float:right;
+	padding:18px 0px;
+}
+.banner4 .tabs{
+	overflow:hidden;
+	
+	
+}
+.banner4 .tabs a{
+	float:left;
+	color:#666;
+	border-top:1px dashed #d8d8d8;
+	border-left:1px dashed #d8d8d8;
+	border-bottom:1px dashed #d8d8d8;
+	height:20px;
+	padding:16px 0;
+	width:110px;
+	text-align:center;
+	
+}
+.banner4 .tabs a .last{
+	border-right:1px dashed #d8d8d8;
+}
+.banner4 .news a{
+	
+	float:left;
+	color:#666;
+	height:20px;
+	padding:16px 0;
+	text-align:center;
+	
+	
+	}
+.banner4 .news .newsc{
+	border-bottom:1px dashed #d8d8d8;
+	width:110px;
+}
+
+.banner4 .news .newst{
+	width:648px;
+	border-bottom:1px dashed #d8d8d8;
+	text-align:left;
+	padding-left:20px;
+}
+.banner4 .right{
+	width:350px;
+	height:491px;
+	float:right;
+	background-color:#FFF;
+	position:relative;
+}
+.banner4 .right img{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	border:0px;
+	display:block;
+	
+	
+	}
+.banner5 h1{
+	height:30px;
+	line-height:30px;
+	margin:40px 0px 10px 0px;
+	color:#e10600;
+	font-size:24px;
+	
+}
+.banner5 p a{
+	color:#e10600;
+	padding:0 10px;
+}
+
+.banner5 ul{
+	overflow:hidden;
+	margin-top:20px;
+}
+.banner5 ul li{
+	height:260px;
+	float:left;
+	width:170px;
+
+}
+.banner5 ul li.split{
+	
+	width:30px;
+}
+.banner5 ul li img{
+	border:0px;
+	display:block;
+}
+.banner5 ul li a{
+ color:#e10600;
+}
+/*底部*/
+.footer{
+	background-color:#333;
+	margin:0 auto;
+	color:#FFFFFF;
+}
+.footer .img1{
+	width:1170px;
+	margin:0px auto;
+	overflow:hidden;
+	
+}
+.footer .img1 img{
+	float:right;
+	height:30px;
+	
+}
+.footer ul.box2{
+	width:1170px;
+	overflow:hidden;
+	margin:-20px auto;
+}
+.footer .box2 span{
+	overflow:hidden;
+	margin:0px auto;
+	float:right;
+	height:29px;
+}
+
+.footer  ul.box2>li{
+	float:left;
+	width:375px;
+	overflow:hidden;
+	margin:0px auto;
+}
+.footer  ul.box2>li.left{
+	margin-right:22px;
+    height:350px;
+	
+}
+.footer  ul.box2>li.center{
+   margin-right:23px;
+	height:350px;
+}
+
+.footer h1{
+	font-size:18px;
+	font-weight:20px;
+	line-height:20px;
+	padding:30px 0px 10px 0px;
+	border-bottom:1px dashed #FFF;
+	
+	
+}
+.box2 .left p{
+	padding:20px 0px;
+	
+	
+}
+.footer .logo{
+	width:120px;
+	height:35px;
+	float:left;
+	background:url(../images/footer_logo.png) no-repeat center;
+	margin:0px 55px;
+}
+.footer .wifi{
+	width:80px;
+	height:35px;
+	float:right;
+	margin:0px;
+	background:url(../images/icon_rss.png) no-repeat  0 15px;
+	text-indent:20px;
+	padding-top:18px;
+
+	
+
+	
+	
+}
+.footer .center li{
+	width:175px;
+	height:30px;
+	float:left;
+	line-height:30px;
+	padding:10px 0px;
+	border-bottom:1px dashed #FFF;
+}
+.footer .center ul{
+	width:100%;
+	overflow:hidden;
+	margin-top:0px;
+}
+
+
+.footer .center li.split{
+	width:25px;
+	border:0px;
+	
+}
+
+.footer .report li{
+	float:none;
+	height:30px;
+	line-height:30px;
+}
+
+
+.copyright{
+    overflow:hidden;
+	background-color:#666;
+	margin:0 auto;
+}
+.copyright .one{
+	width:1170px;
+	overflow:hidden;
+	margin:0 auto;
+	
+}
+.copyright .one .one1{
+	height:25px;
+	float:left;
+	margin5px 0px;
+	color:#FFF;
+	width:760px;
+
+}
+.copyright .one .one2{
+	height:25px;
+	float:right;
+	margin:0px ;
+	color:#FFF;
+}
+
+.copyright .one li{
+	height:20px;
+	float:left;
+	margin:0px ;
+	color:#FFF;
+}
+
+

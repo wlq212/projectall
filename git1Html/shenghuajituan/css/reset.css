@@ -1,0 +1,12 @@
+/* CSS Document */
+body,ul,ol,dl,li,dt,dd,h1,h2,h3,table,tr,td,th,input,tbody,p,pre{
+	margin:0px;
+	padding:0px;
+	font-weight:normal;
+	font-size:14px;
+}
+li{list-style:none;}
+a{ text-decoration:none;}
+*{
+	font-family:"微软雅黑"，"宋体","黑体";
+}

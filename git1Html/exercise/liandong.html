@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>多级联动</title>
+	<script type="text/javascript" src="js/jquery-2.1.4/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$("#grade").click(function(){ 
+			var request = new XMLHttpRequest();
+			request.open("GET","data/grade.json");
+			request.setRequestHeader("Content-Type","text/plain;charset=UTF-8");
+			request.send();
+			//获取响应
+			request.onreadystatechange = function(){
+				if(request.status===200&& request.readyState === 4){
+					var txt = request.responseText;
+					var grades = JSON.parse(txt);
+					$("#grade").children(":not(:first)").remove();
+					grades.forEach(function(item){
+						var oo = $("<option value='"+item.gradeId+"'>"+item.gradeName+"</option>");
+						$("#grade").append(oo);
+					});
+				}
+			}
+		});
+	});
+	</script>
+</head>
+<body>
+	年级:
+	<select name="grade" id="grade">
+		<option value="">请选择</option>
+
+	</select>
+	班级:
+	<select name="clazz" id="clazz" disabled="disabled">
+		<option value="">请选择</option>
+	</select>
+	学生:
+	<select name="student" id="student" disabled="disabled">
+		<option value="">请选择</option>
+	</select>
+</body>
+</html>

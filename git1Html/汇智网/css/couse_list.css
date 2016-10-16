@@ -1,0 +1,13 @@
+.list_content_center .couse_list_li li{
+    width: 250px;
+    height: 80px;
+    text-align: left;
+    line-height: 80px;
+    font-size: 27px;
+    font-weight: bold;
+
+}
+.list_content_center .couse_list_li li:before{
+    vertical-align: top;
+    content: url("../img/3-couse-list_09.png");
+}

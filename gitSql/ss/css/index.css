@@ -1,0 +1,16 @@
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+table th,table td{
+    width:600px;
+    border: 1px solid #ddd;
+
+}
+#inserform{
+    width: 1200px;
+    margin: 0 auto;
+}
+#inserform input{
+    margin: 10px 0;
+}
