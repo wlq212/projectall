@@ -1,0 +1,73 @@
+/*第一部分*/
+.row-one{
+    height: 50px;
+    background: #00AE66;
+}
+.row-one .done{
+    height:50px;
+    line-height: 50px;
+}
+.row-one .done a{
+    color: #fff;
+}
+.row-one .dtwo ul{
+    margin-left: 15px;
+}
+.row-one .dtwo ul>li,a{
+    text-align: center;
+    color: #fff;
+}
+/*第二部分*/
+.row-two{
+   height:70px;
+    background: #F4F4F4;
+    padding: 15px;
+    overflow: hidden;
+}
+.row-two input{
+    height: 40px;
+}
+
+.row-two span{
+    border-left: 1px solid#ccc;
+}
+/*第三部分*/
+
+.row-three > .tabs-header>li{
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid#ccc;
+    height: 40px;
+    border-left: none;
+}
+
+.list-house{
+    height: 120px;
+    border-bottom: 1px solid#ccc;
+}
+.list-house .media{
+    padding: 10px 15px;
+}
+.list-house .media .media-heading{
+font-size: 15px;
+    font-weight: bolder;
+}
+.list-house .media .media-heading .sp1{
+    border: 1px solid#65ABD7;
+    height: 10px;
+    width: 15px;
+    color: #65ABD7;
+}
+.list-house .media .media-heading .sp2{
+    border: 1px solid#F5CC3F;
+    height: 10px;
+    width: 25px;
+    color: #F5CC3F;
+}
+.list-house .media .media-heading .sp3{
+    border: 1px solid#4B93C1;
+    height: 10px;
+    width: 25px;
+    color: #4B93C1;
+}

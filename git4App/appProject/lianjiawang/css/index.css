@@ -1,0 +1,93 @@
+/*第一部分*/
+.header{
+    position: relative;
+    height: 280px;
+   background: url(../images/0.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.header .header-one{
+    height: 50px;
+    line-height: 50px;
+    margin: 25px 0;
+
+}
+.header .btns{
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+}
+.header .header-two{
+    height: 50px;
+    margin: 5px 0;
+}
+.header .header-two>span{
+   padding: 10px;
+    font-size: 25px;
+    margin-top: 15px;
+    text-align: center;
+    color: #fff;
+}
+.header h1{
+    color: #fff;
+    font-weight:bolder;
+}
+.header h3{
+    color: #fff;
+    margin-top: -4px;
+}
+.header .header-three{
+    margin: 35px 0;
+}
+/*第二部分*/
+.header > .row-three{
+    position: absolute;
+    bottom: 12px;
+}
+.buys{
+    padding-top:22px;
+    border-bottom:1px solid #c5c5c5;
+}
+.buys ul{
+    width:51px;
+    margin:  auto;
+    text-align: center;
+    height: 119px;
+}
+.buys ul>li:last-child{
+    margin-top: 5px;
+}
+/*第三部分*/
+.carousels{
+    padding: 10px 0;
+    margin: 0 -15px;
+    background: #f4f4f4;
+    border-bottom: 1px solid#c5c5c5;
+}
+.carousels img{
+    width: 100%;
+}
+/*第四部分- 热门房源*/
+.hot-rooms > .hot-header{
+    height: 48px;
+    line-height: 48px;
+    padding-left: 15px;
+    border-bottom: 1px solid #c5c5c5;
+}
+.hot-rooms > .hot-list > .media{
+    padding: 14px 11px;
+    border-bottom: 1px solid #c5c5c5;
+}
+.hot-rooms > .hot-list .media-heading{
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+.hot-rooms > .hot-list .media-body > p{
+    margin: 0;
+    font-size: 12px;
+}
+.hot-rooms > .hot-list .media-body .label{
+    display: inline-block;
+    margin-top: 4px;
+}

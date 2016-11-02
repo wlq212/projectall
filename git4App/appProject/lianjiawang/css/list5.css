@@ -1,0 +1,33 @@
+/*第一部分*/
+.row-one .shouji ul{
+    height: 40px;
+    line-height: 40px;
+    font-size: 17px;
+
+}
+.row-one .shouji ul button{
+    background: #fff;
+    border: 1px solid#ccc;
+}
+.row-two .navs{
+    margin: 20px 0;
+    border: 1px solid#9FD7B7;
+    background: #39AC6A;
+}
+.row-two .navs ul>li{
+    text-align: center;
+    padding: 15px 0;
+    font-size: 17px;
+    font-weight: bolder;
+    color: #fff;
+}
+.row-three span{
+    font-size:16px ;
+    font-weight: bolder;
+}
+.row-three .done .sp1{
+    color: #70B185;
+}
+.row-fj{
+    border-bottom: 1px solid#ccc;
+}

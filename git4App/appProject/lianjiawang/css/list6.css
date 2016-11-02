@@ -1,0 +1,43 @@
+/*第一部分*/
+.row-one{
+    height: 45px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.row-two{
+    border-top: 5px solid#ccc;
+}
+.row-two .dd{
+    margin: -4px 0;
+    border-top:5px solid#39AC6A;
+}
+.row-three ul{
+    height: 45px;
+    line-height: 45px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.row-four{
+    border-bottom: 1px solid#ccc;
+}
+.row-five .navs{
+    margin: 20px 0;
+    border: 1px solid#9FD7B7;
+    background: #39AC6A;
+}
+.row-five .navs ul>li{
+    text-align: center;
+    padding: 15px 0;
+    font-size: 17px;
+    font-weight: bolder;
+    color: #fff;
+}
+.row-six span{
+    font-size:16px ;
+    font-weight: bolder;
+}
+.row-six .done .sp1{
+    color: #70B185;
+}

@@ -1,0 +1,148 @@
+/*第一部分*/
+
+.row-one{
+    height: 50px;
+    background: #00AE66;
+    overflow: hidden;
+}
+.row-one .done{
+    height:50px;
+    line-height: 50px;
+}
+.row-one .done a{
+    color: #fff;
+}
+.row-one .dtwo ul{
+    margin-left: 15px;
+}
+.row-one .dtwo ul>li,a{
+    text-align: center;
+    color: #fff;
+}
+/*第二部分*/
+.row-two{
+    background: url(../images/9-detail_02.jpg)no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 230px;
+
+}
+.row-three{
+    height: 65px;
+    background: #F9F9F9;
+    border-bottom: 1px solid#ccc;
+    overflow: hidden;
+
+}
+.row-three .hh ul {
+    margin: 15px 0;
+    margin-left: 5px;
+
+}
+.row-three .hh ul li{
+    font-size: 15px;
+    font-weight: bolder;
+
+
+}
+.row-three .guanzu{
+    height: 65px;
+   text-align: center;
+    border-left: 1px solid#ccc;
+
+}
+.row-three .guanzu .ll{
+    text-align: center;
+    font-size:25px;
+}
+.row-three .guanzu .lt{
+    font-size: 15px;
+    font-weight: bolder;
+}
+/*第三部分*/
+.row-four .yangshi{
+    height: 60px;
+    border-bottom: 1px solid#ccc;
+    text-align: center;
+
+}
+
+.row-four .yangshi li{
+    height: 40px;
+    border-left: 1px solid;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.row-four .yangshi li:nth-child(1){
+    border-left:none;
+}
+
+.row-four .yangshi li p{
+    color: #E46C43;
+}
+/*--第四部分*/
+.row-five{
+    height: 50px;
+    border-bottom: 1px solid#ccc;
+}
+.row-five span{
+    padding:0 10px;
+    line-height: 40px;
+}
+.row-five span:nth-child(1){
+    font-size: 18px;
+    font-weight: bolder;
+}
+.row-five span:nth-child(2){
+    border: 1px solid#FFCB6F;
+    color: #FFCB6F;
+    font-weight: bolder;
+}
+.row-five span:nth-child(3){
+    border: 1px solid#61A0BF;
+    color: #61A0BF;
+    font-weight: bolder;
+}
+.row-five span:nth-child(4){
+    border: 1px solid#3FB360;
+    color: #3FB360;
+    font-weight: bolder;
+}
+.row-six{
+    height: 50px;
+    border-bottom: 1px solid#ccc;
+}
+.row-six span{
+    padding:0 10px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.row-se{
+    height: 50px;
+
+    border-bottom: 1px solid#ccc;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.row-se .chaox span{
+    padding:0 10px;
+}
+/*最后一部分*/
+.row-night{
+    padding: 10px 27px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.row-night span {
+    padding: 10px 0;
+    border: 1px solid#5DCB96;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50%;
+    color: #fff;
+    background: #5DCB96;
+}

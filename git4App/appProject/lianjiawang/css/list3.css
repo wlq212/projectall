@@ -1,0 +1,61 @@
+/*第一部分*/
+
+.row-one{
+    height: 50px;
+    background: #00AE66;
+}
+.row-one .done{
+    height:50px;
+    line-height: 50px;
+}
+.row-one .done a{
+    color: #fff;
+}
+.row-one .dtwo ul{
+    margin-left: 15px;
+}
+.row-one .dtwo ul>li,a{
+    text-align: center;
+    color: #fff;
+}
+/*第二部分*/
+.row-two{
+    height: 190px;
+    background:url(../images/11-self_02.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.row-two .users{
+    height: 70px;
+    text-align: center;
+    margin: 25px 0;
+}
+.row-two .users span{
+    border: 1px solid#D1B470;
+    height: 60px;
+    width: 60px;
+    padding: 15px 0;
+    border-radius: 50%;
+    background: #857246;
+    font-size: 30px;
+    color: #fff;
+}
+.row-two .btns{
+    height: 60px;
+    text-align: center;
+}
+.row-two .btns button{
+    border:1px solid#F9FEFB;
+    width: 90px;
+    height: 40px;
+    background: #39AC6A;
+    color: #F9FEFB;
+    margin: 0 5px;
+}
+.row-three .houses {
+    height: 50px;
+    line-height: 50px;
+}
+.row-three .houses li{
+    font-weight: bolder;
+}

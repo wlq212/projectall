@@ -1,0 +1,43 @@
+/*第一部分*/
+.row-one{
+    background: #00AE66;
+    height: 45px;
+}
+.row-one .done{
+    height: 45px;
+    line-height: 45px;
+    margin: 0 10px;
+}
+.row-one .done span{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bolder;
+}
+.row-one .dtwo{
+    height: 45px;
+    line-height: 45px;
+    padding: 0 6px;
+
+}
+.row-one .dtwo span{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bolder;
+}
+.row-two .dtree{
+    height: 40px;
+    line-height: 40px;
+    background: #EAEAEB;
+}
+.row-two .dfour{
+    height: 50px;
+    line-height: 50px;
+    background: #FFFFFF;
+}
+.row-three ul{
+    height: 45px;
+    line-height: 45px;
+}
+.row-three ul>li{
+    font-weight: bolder;
+}
